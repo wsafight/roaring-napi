@@ -12,6 +12,7 @@ crate-type = ["cdylib"]
 [dependencies]
 napi        = "2"
 napi-derive = "2"
+roaring = "0.10.10"
 
 [build-dependencies]
 napi-build = "2"

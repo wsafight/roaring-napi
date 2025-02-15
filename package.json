@@ -1,5 +1,5 @@
 {
-  "name": "@napi-rs/package-template",
+  "name": "@napi-rs/roaring-napi",
   "version": "0.0.1",
   "description": "Template project for writing node package with napi-rs",
   "main": "index.js",
@@ -45,6 +45,7 @@
   "scripts": {
     "artifacts": "napi artifacts",
     "bench": "node --import @swc-node/register/esm-register benchmark/bench.ts",
+    "bench:bun": "bun benchmark/bench.ts",
     "build": "napi build --platform --release",
     "build:debug": "napi build --platform",
     "format": "run-p format:prettier format:rs format:toml",
@@ -104,5 +105,8 @@
     "singleQuote": true,
     "arrowParens": "always"
   },
-  "packageManager": "pnpm@10.0.0"
+  "packageManager": "pnpm@10.0.0",
+  "dependencies": {
+    "roaring": "^2.4.0"
+  }
 }

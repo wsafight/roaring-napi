@@ -1,19 +1,19 @@
 import { Bench } from 'tinybench'
-
-import { plus100 } from '../index.js'
-
-function add(a: number) {
-  return a + 100
-}
+import { RoaringBitmap } from '../index.js'
 
 const b = new Bench()
 
-b.add('Native a + 100', () => {
-  plus100(10)
+const bitmap = new RoaringBitmap()
+
+b.add('Rust RoaringBitmap', () => {
+  bitmap.add(1)
 })
 
-b.add('JavaScript a + 100', () => {
-  add(10)
+b.add('C++ RoaringBitmap', () => {
+  for (let i = 0; i< 1000;i ++) {
+    bitmap.add(i)
+    bitmap.has(i)
+  }
 })
 
 await b.run()
