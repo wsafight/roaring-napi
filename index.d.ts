@@ -12,4 +12,5 @@ export declare class RoaringBitmap {
   isEmpty(): boolean
   serialize(): Array<number>
   deserialize(bytes: Array<number>): void
+  union(other: RoaringBitmap): void
 }
