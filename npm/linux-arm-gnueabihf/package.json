@@ -1,15 +1,15 @@
 {
-  "name": "@napi-rs/package-template-linux-arm-gnueabihf",
-  "version": "1.0.0",
+  "name": "roaring-napi-linux-arm-gnueabihf",
+  "version": "0.0.1",
   "os": [
     "linux"
   ],
   "cpu": [
     "arm"
   ],
-  "main": "package-template.linux-arm-gnueabihf.node",
+  "main": "roaring-napi.linux-arm-gnueabihf.node",
   "files": [
-    "package-template.linux-arm-gnueabihf.node"
+    "roaring-napi.linux-arm-gnueabihf.node"
   ],
   "description": "Template project for writing node package with napi-rs",
   "keywords": [

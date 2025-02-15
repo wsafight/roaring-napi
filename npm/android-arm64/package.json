@@ -1,15 +1,15 @@
 {
-  "name": "@napi-rs/package-template-android-arm64",
-  "version": "1.0.0",
+  "name": "roaring-napi-android-arm64",
+  "version": "0.0.1",
   "os": [
     "android"
   ],
   "cpu": [
     "arm64"
   ],
-  "main": "package-template.android-arm64.node",
+  "main": "roaring-napi.android-arm64.node",
   "files": [
-    "package-template.android-arm64.node"
+    "roaring-napi.android-arm64.node"
   ],
   "description": "Template project for writing node package with napi-rs",
   "keywords": [
